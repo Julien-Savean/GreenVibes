@@ -1,3 +1,28 @@
 body {
     width: 100%;
+    background: url("../images/fond4.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.bg-light {
+    --bs-bg-opacity: 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2rem;
+}
+
+nav img {
+    height: 10rem;
+}
+
+.nav-title {
+    font-size: 3rem;
+    color: white;
+}
+
