@@ -5,6 +5,9 @@
 {% endblock %}
 
 {% block content %}
+<pre>
+    {{ dump(requests) }}
+</pre>
     <div class="container justify-content-center">
         <div class="row">
             <div class="col">
@@ -16,8 +19,17 @@
         <div class="row">
             <div class="player">
                 <div id="info" class="info">
-                    <span class="artist">Flume</span>
-                    <span class="name">Say it</span>
+                    <span class="artist">
+                        {% for resquest in requests %}
+                            {{ request. }}
+                            <audio autoplay src="{{ request.}}"></audio>
+                        {% endfor %}                                          
+                    </span>
+                    <span class="name">
+                        {% for request in requests %}
+                            {{ request. }}
+                        {% endfor %}
+                    </span>
                     <div class="progress-bar">
                         <div class="bar"></div>
                     </div>
@@ -32,7 +44,12 @@
                 </div>
             </div>
         </div>
-    </div>     
+    </div>
+    <div>
+    <pre>
+        {{ dump(request) }}
+    </pre> 
+    </div>    
 {% endblock %}
 
 {% block javascript %}
