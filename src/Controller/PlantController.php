@@ -9,12 +9,15 @@
 
 namespace App\Controller;
 
+use App\Model\ApiManager;
 use App\Model\PlantManager;
 
 class PlantController extends AbstractController
 {
+    public const NGROK = 'http://f0f8-90-83-11-209.ngrok.io';
     /**
      * Display home page
+     *
      *
      * @return string
      * @throws \Twig\Error\LoaderError
@@ -32,6 +35,10 @@ class PlantController extends AbstractController
     {
         $plantManager = new PlantManager();
         $plant = $plantManager->getOnePlant($id);
-        return $this->twig->render('Show/show.html.twig', ['plant' => $plant]);
+        
+        $apiManager = new ApiManager();
+        $request = $apiManager->requestApi();
+        
+        return $this->twig->render('Show/show.html.twig', ['plant' => $plant, 'request' => $request]);
     }
 }
