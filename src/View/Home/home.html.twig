@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/home.css">
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid plantsGrid d-flex g-0 m-0 p-0">
+        <div class="row row-cols-12">
+            {% for plant in plants %}
+                <div class="col-auto" >
+                    <div id="plant"><a href="/show?id={{ plant.id }}"><img src="{{ plant.picture }}" alt="{{ plant.name }}"></a></div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>      
+{% endblock %}
