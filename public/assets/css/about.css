@@ -1,0 +1,80 @@
+#about {
+    color: black;
+    background-color: white;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.about__exitImg {
+    width: 2.5rem; 
+    height: auto;
+    margin-top: 1rem;
+}
+
+.about__plantImg {
+    width: 90%;
+}
+
+.about__treeImg {
+    width: 100%;
+    border-radius: 11px;
+    box-shadow:12px 12px 2px 1px grey;
+    gap: 1em;
+    border: double;
+}
+
+.para {
+    margin: 1rem;
+    box-shadow: 12px 12px 2px 1px grey;
+    border-radius: 0.8rem;
+    border: double;
+    padding: 1rem;
+}
+
+.titre {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.about__treeImg2 {
+    border-radius: 0.8rem;
+    height: 19rem;
+    width: 100%;
+    box-shadow:12px 12px 2px 1px grey;
+    border: double;
+}
+
+.about__gif {
+    height: 15rem;
+    width:  20rem;
+    align-items: center;
+    border-radius: 11px;
+    box-shadow:12px 12px 2px 1px grey;
+    border: double;
+}
+
+.col img {
+    margin-top: 2.5em;
+}
+
+.about__title {
+    text-shadow: 2px 2px 2px #00ff2a;
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+    width: 80%;
+    font-size: 3rem;
+}
+
+.about__text {
+    text-align: center;
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+.about__sign {
+    text-shadow: 2px 2px 2px #FF6D00;
+    text-align: right;
+    margin: 1rem 1rem 0 0;
+    width: 80%;
+    font-size: 1.5rem;
+}
