@@ -8,6 +8,11 @@ class PlantManager extends AbstractManager
 
     public function getAllPlants()
     {
-        $this->selectAll();
+        return $this->selectAll();
+    }
+
+    public function getOnePlant(int $id)
+    {
+        return $this->selectOneById($id);
     }
 }

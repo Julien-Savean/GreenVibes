@@ -3,8 +3,8 @@
 {% block content %}
     <div class="container">
         <div class="row">
-            {% for row in array %}
-                <div><a href=""><img src="{{ }}" alt="{{ }}"></a></div>
+            {% for plant in plants %}
+                <div><a href="/show?id={{ plant.id }}"><img src="{{ plant.picture }}" alt="{{ plant.name }}"></a></div>
             {% endfor %}
         </div>
     </div>      
