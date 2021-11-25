@@ -35,10 +35,10 @@ class PlantController extends AbstractController
     {
         $plantManager = new PlantManager();
         $plant = $plantManager->getOnePlant($id);
-        
+
         $apiManager = new ApiManager();
-        $request = $apiManager->requestApi();
-        
-        return $this->twig->render('Show/show.html.twig', ['plant' => $plant, 'request' => $request]);
+        $requests = $apiManager->requestApi();
+
+        return $this->twig->render('Show/show.html.twig', ['plant' => $plant, 'requests' => $requests]);
     }
 }
