@@ -6,10 +6,12 @@ use Symfony\Component\HttpClient\HttpClient;
 
 class ApiManager extends AbstractManager
 {
+    public const NGROCK = 'http://0413-86-195-148-141.ngrok.io';
+
     public function requestApi()
     {
         $client = HttpClient::create();
-        $response = $client->request('GET', 'https://developers.deezer.com/api/explorer?url=playlist/908622995');
+        $response = $client->request('GET', self::NGROCK . "/music" . "/");
 
         $statusCode = $response->getStatusCode();
 

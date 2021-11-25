@@ -9,6 +9,7 @@
 
 namespace App\Controller;
 
+use App\Model\ApiManager;
 use App\Model\PlantManager;
 
 class PlantController extends AbstractController
@@ -32,6 +33,10 @@ class PlantController extends AbstractController
     {
         $plantManager = new PlantManager();
         $plant = $plantManager->getOnePlant($id);
-        return $this->twig->render('Show/show.html.twig', ['plant' => $plant]);
+
+        $apiManager = new ApiManager();
+        $requests = $apiManager->requestApi();
+
+        return $this->twig->render('Show/show.html.twig', ['plant' => $plant, 'requests' => $requests]);
     }
 }
