@@ -11,7 +11,7 @@ return [
     'show' => ['PlantController', 'show', ['id']],
     'items/add' => ['ItemController', 'add',],
     'items/delete' => ['ItemController', 'delete',],
+    'about' => ['AboutController', 'about'],
     'request' => ['ApiController', '',],
     'response' => ['ApiController', 'response',],
-
 ];
