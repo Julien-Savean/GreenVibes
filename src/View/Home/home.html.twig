@@ -8,7 +8,7 @@
 <section class="home">
     <h1>Whitch Green Vibes are you ?</h1>
     <div class="container-fluid plantsGrid d-flex justify-content-center g-0 m-0 p-0">
-        <div class="row row-cols-12 justify-content-center mt-3">
+        <div class="row row-cols-12 justify-content-center mt-4">
             {% for plant in plants %}
                 <div class="col-md-auto plant" >
                     <div id="plant-img"><a href="/show?id={{ plant.id }}"><img src="{{ plant.picture }}" alt="{{ plant.name }}"></a></div>
