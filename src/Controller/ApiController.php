@@ -10,7 +10,7 @@ class ApiController extends AbstractController
     {
         $apiManager = new ApiManager();
         $request = $apiManager->requestApi();
-
+        
         return $this->twig->render('Api/response.html.twig', ['request' => $request]);
     }
 }
