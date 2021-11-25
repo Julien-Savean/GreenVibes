@@ -14,5 +14,8 @@ return [
     'about' => ['AboutController', 'about'],
     'request' => ['ApiController', '',],
     'response' => ['ApiController', 'response',],
+<<<<<<< HEAD
 
+=======
+>>>>>>> 70c4fe5f4e0385bd04b3d820263fd16be0c6d693
 ];
