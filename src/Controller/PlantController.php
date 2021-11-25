@@ -11,7 +11,7 @@ namespace App\Controller;
 
 use App\Model\PlantManager;
 
-class PlantsController extends AbstractController
+class PlantController extends AbstractController
 {
     /**
      * Display home page

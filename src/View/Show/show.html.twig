@@ -1,9 +1,38 @@
 {% extends 'layout.html.twig' %}
 
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/styleShow.css">
+{% endblock %}
+
 {% block content %}
     <div class="container">
         <div class="row">
             <div><img src="{{ plant.picture }}" alt="{{ plant.name }}"></div>
         </div>
-    </div>      
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="player">
+                <div id="info" class="info">
+                    <span class="artist">Flume</span>
+                    <span class="name">Say it</span>
+                    <div class="progress-bar">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div id="control-panel" class="control-panel">
+                    <div class="album-art"></div>
+                    <div class="controls">
+                        <div class="prev"></div>
+                        <div id="play" class="play"></div>
+                        <div class="next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>     
+{% endblock %}
+
+{% block javascript %}
+    <script src="/assets/js/show.js"></script>
 {% endblock %}
