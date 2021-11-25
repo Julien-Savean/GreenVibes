@@ -9,7 +9,7 @@ class ApiManager extends AbstractManager
     public function requestApi()
     {
         $client = HttpClient::create();
-        $response = $client->request('GET', '');
+        $response = $client->request('GET', 'https://api.deezer.com/album/302127');
 
         $statusCode = $response->getStatusCode();
 
