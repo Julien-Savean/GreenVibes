@@ -1,0 +1,10 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+    <h1>Ma reponse de requete</h1>
+    <div>
+        <pre>
+            {{ dump(request) }}
+        </pre>
+    </div>
+{% endblock %}
