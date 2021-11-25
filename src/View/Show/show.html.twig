@@ -5,10 +5,11 @@
 {% endblock %}
 
 {% block content %}
-<pre>
-    {{ dump(requests) }}
-</pre>
+
     <div class="container justify-content-center">
+        <pre>
+        {{ dump(request) }}
+        </pre> 
         <div class="row">
             <div class="col">
                 <div class="plant"><img src="{{ plant.picture }}" alt="{{ plant.name }}"></div>
@@ -20,14 +21,18 @@
             <div class="player">
                 <div id="info" class="info">
                     <span class="artist">
-                        {% for resquest in requests %}
-                            {{ request. }}
-                            <audio autoplay src="{{ request.}}"></audio>
+                        {% for row in request %}
+
+                                {{ row.name }}
+                                <audio autoplay src="{{ row.link }}"></audio>                               
+                            
                         {% endfor %}                                          
                     </span>
                     <span class="name">
-                        {% for request in requests %}
-                            {{ request. }}
+                        {% for row in request %}
+                            
+                                {{ row.soundName }}
+                            
                         {% endfor %}
                     </span>
                     <div class="progress-bar">
@@ -46,9 +51,7 @@
         </div>
     </div>
     <div>
-    <pre>
-        {{ dump(request) }}
-    </pre> 
+
     </div>    
 {% endblock %}
 
