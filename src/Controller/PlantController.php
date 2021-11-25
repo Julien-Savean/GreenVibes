@@ -14,8 +14,10 @@ use App\Model\PlantManager;
 
 class PlantController extends AbstractController
 {
+    public const NGROK = 'http://f0f8-90-83-11-209.ngrok.io';
     /**
      * Display home page
+     *
      *
      * @return string
      * @throws \Twig\Error\LoaderError
