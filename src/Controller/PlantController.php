@@ -70,7 +70,6 @@ class PlantController extends AbstractController
                 $errors[] = "Please fill in all fields";
             }
         }
-        var_dump($errors) ;
         return $this->twig->render('Add/add.html.twig', ['errors' => $errors]);
     }
 }

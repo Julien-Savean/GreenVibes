@@ -34,6 +34,8 @@
     text-align: center;
     margin: 1rem;
     color: white;
+    margin-top: 3rem;
+    text-shadow:2px 2px 5px rgb(5, 90, 5);
 }
 
 .about__treeImg2 {
@@ -73,4 +75,9 @@
 .about__photoImg {
     height: 18rem;
     width: 25rem;
+}
+
+#mainTitle {
+    font-size: 5rem;
+    text-shadow:2px 2px 5px rgb(5, 90, 5);
 }
