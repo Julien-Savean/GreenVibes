@@ -9,9 +9,10 @@
 return [
     '' => ['PlantController', 'index',],
     'show' => ['PlantController', 'show', ['id']],
-    'items/add' => ['ItemController', 'add',],
+    'add' => ['PlantController', 'add',],
     'items/delete' => ['ItemController', 'delete',],
     'about' => ['AboutController', 'about'],
     'request' => ['ApiController', '',],
     'response' => ['PlantController', 'showArray',],
+
 ];
