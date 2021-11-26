@@ -55,4 +55,9 @@ class PlantController extends AbstractController
         $requests = $apiManager->requestApi();
         return $this->twig->render('Item/show.html.twig', ['requests' => $requests]);
     }
+
+    public function add()
+    {
+        return $this->twig->render('Add/add.html.twig');
+    }
 }
