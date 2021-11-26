@@ -18,9 +18,8 @@ class PlantManager extends AbstractManager
 
     public function insert(array $plants): void
     {
-        $statement = $this->pdo->prepare(
-            "INSERT INTO " . self::TABLE . " (`name`, `picture`) VALUES (:name, :picutre)"
-        );
+        $statement = $this->pdo->prepare("INSERT INTO " . self::TABLE . " (`name`, `picture`) 
+        VALUES (:name, :picture)");
         $statement->bindValue(':name', $plants['name'], \PDO::PARAM_STR);
         $statement->bindValue(':picture', $plants['picture'], \PDO::PARAM_STR);
         $statement->execute();
