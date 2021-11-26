@@ -13,5 +13,5 @@ return [
     'items/delete' => ['ItemController', 'delete',],
     'about' => ['AboutController', 'about'],
     'request' => ['ApiController', '',],
-    'response' => ['ApiController', 'response',],
+    'response' => ['PlantController', 'showArray',],
 ];
