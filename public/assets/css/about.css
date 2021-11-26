@@ -1,3 +1,9 @@
+@font-face {
+    font-family: titleFont2;
+    src: url("../fonts/black.TTF");
+}
+
+
 #about {
     color: black;
     background-color: white;
@@ -17,16 +23,16 @@
 
 .about__treeImg {
     width: 100%;
-    border-radius: 11px;
-    box-shadow:12px 12px 2px 1px grey;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(5, 90, 5);
     gap: 1em;
     border: double;
 }
 
 .para {
     margin: 1rem;
-    box-shadow: 12px 12px 2px 1px grey;
-    border-radius: 0.8rem;
+    box-shadow: 2px 2px 5px rgb(5, 90, 5);
+    border-radius: 20px;
     border: double;
     padding: 1rem;
 }
@@ -34,13 +40,15 @@
 .titre {
     text-align: center;
     margin: 1rem;
+    font-family: titleFont2;
+    color: white;
 }
 
 .about__treeImg2 {
-    border-radius: 0.8rem;
+    border-radius: 20px;
     height: 26.5rem;
     width: 100%;
-    box-shadow:12px 12px 2px 1px grey;
+    box-shadow: 2px 2px 5px rgb(5, 90, 5);
     border: double;
 }
 
@@ -49,8 +57,8 @@
     height: 20rem;
     width:  25rem;
     align-items: center;
-    border-radius: 11px;
-    box-shadow:12px 12px 2px 1px grey;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(5, 90, 5);
     border: double;
 }
 
