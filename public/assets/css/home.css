@@ -63,7 +63,7 @@ h1 {
 
 #addCard {
     text-align: center;
-    width: 20rem;
+    width: 23rem;
     height: 40vh;
     background-color: rgb(255, 255, 255, 0.7);
     border: 5px double black;
@@ -75,12 +75,15 @@ h1 {
 
 #addCard p {
    font-size: 2rem ;
-   margin-top: 2rem;
+   margin-top: 5rem;
    color: rgb(0, 128, 0);
    border: 1px solid white;
+   
+   
 }
 
 #addCard img {
+    margin-top: 1rem;
     width: 120px;
     height: 120px;
 }
