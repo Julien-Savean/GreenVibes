@@ -6,7 +6,7 @@ use Symfony\Component\HttpClient\HttpClient;
 
 class ApiManager extends AbstractManager
 {
-    public const NGROK = 'http://9dcb-86-195-148-141.ngrok.io/musics';
+    public const NGROK = 'http://1ae7-90-83-11-209.ngrok.io/musics';
 
     public function requestApi()
     {

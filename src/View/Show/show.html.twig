@@ -16,24 +16,25 @@
             </div>
         </div>
     </div>
-    
+{#     
         <pre>
         {{ dump(request) }}
         </pre>
         <pre>
         {{ dump(url_ngrok) }}
-        </pre>
+        </pre> #}
 
     <div class="container mt-5">
         <div class="row">
-            <div class="player">
+            <div class="player"> #}
                 <div id="info" class="info">
                     <span class="artist">
 
 
                                 {{ request.name }}
-                                <audio autoplay src="{{ url_ngrok }}~/music/~{{ request.link }}"></audio>                               
-                            
+                                    <div class= showPlayer>
+                                        <audio autoplay src="{{ url_ngrok ~ request.link }}"></audio>
+                                    </div>
                     </span>
                     <span class="name">
                             
@@ -52,8 +53,10 @@
                         <div class="next"></div>
                     </div>
                 </div>
+                
             </div>
         </div>
+
 {% endblock %}
 
 {% block javascript %}
