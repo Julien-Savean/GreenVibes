@@ -3,7 +3,6 @@
     src: url("../fonts/black.TTF");
 }
 
-
 #about {
     color: black;
     background-color: white;
@@ -31,8 +30,6 @@
 
 .para {
     margin: 1rem;
-    
-    
     padding: 1rem;
 }
 
