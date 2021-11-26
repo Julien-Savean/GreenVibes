@@ -1,0 +1,28 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/add.css">
+{% endblock %}
+
+{% block content %}
+<section class="login">
+    <section class="login__header">
+        <h2>Welcome</h1>
+        <h6>Join us for more fun !</h6>
+    </section>
+    <form action="" method="POST">
+    <section class="login__form">
+        <p class="login__error">{{ errors|last }}</p>
+        <div class="form-floating login__nickname">
+            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="nickname">
+            <label for="floatingInput">Name</label>
+        </div>  
+        <div class="form-floating login__password">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+            <label for="floatingPassword">Image</label>
+        </div>
+        <button class="btn btn-primary login__button" type="submit">Add</button>
+    </section>
+    </form>
+</section>
+{% endblock %}
