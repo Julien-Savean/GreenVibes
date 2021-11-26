@@ -3,10 +3,6 @@
     src: url("../fonts/Adoriademo.otf");
 }
 
-@font-face {
-    font-family: textFont;
-    src: url("../fonts/GreatVibes-Regular.otf");
-}
 
 body {
     width: 100%;
