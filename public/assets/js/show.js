@@ -4,7 +4,7 @@ class musicPlayer {
 	constructor() {
 		this.play = this.play.bind(this);
 		this.playBtn = document.getElementById('play');
-		this.playBtn.addEventListener('click', this.play);
+		this.playBtn.addEventListener('play', this.play);
 		this.controlPanel = document.getElementById('control-panel');
 		this.infoBar = document.getElementById('info');
 	}
