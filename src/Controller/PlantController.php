@@ -14,7 +14,7 @@ use App\Model\PlantManager;
 
 class PlantController extends AbstractController
 {
-    public const URL_NGROK = 'http://1ae7-90-83-11-209.ngrok.io/music/';
+    public const URL_NGROK = 'http://e2bc-90-83-11-209.ngrok.io/music/';
     /**
      * Display home page
      *
