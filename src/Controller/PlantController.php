@@ -53,6 +53,24 @@ class PlantController extends AbstractController
 
     public function add()
     {
-        return $this->twig->render('Add/add.html.twig');
+        $errors = [];
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            if (!empty($_POST['name']) && !empty($_POST['picture'])) {
+                $plant = array_map('trim', $_POST);
+                if (empty($_POST['name'])) {
+                    $errors[] = "Please enter a name";
+                } elseif (empty($_POST['picture'])) {
+                    $errors[] = "Please enter a url";
+                } else {
+                    $plantManager = new PlantManager();
+                    $plantManager->insert($plant);
+                    header('Location: /home');
+                }
+            } else {
+                $errors[] = "Please fill in all fields";
+            }
+        }
+        var_dump($errors) ;
+        return $this->twig->render('Add/add.html.twig', ['errors' => $errors]);
     }
 }
