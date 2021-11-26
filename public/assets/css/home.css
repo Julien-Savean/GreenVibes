@@ -87,3 +87,7 @@ h1 {
     width: 120px;
     height: 120px;
 }
+
+.plant a {
+    text-decoration: none;
+}
