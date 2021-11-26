@@ -31,9 +31,8 @@
 
 .para {
     margin: 1rem;
-    box-shadow: 2px 2px 5px rgb(5, 90, 5);
-    border-radius: 20px;
-    border: double;
+    
+    
     padding: 1rem;
 }
 
@@ -50,6 +49,14 @@
     width: 100%;
     box-shadow: 2px 2px 5px rgb(5, 90, 5);
     border: double;
+}
+
+.background {
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 25px;
+    border-radius: 20px;
+    border: double;
+    box-shadow: 2px 2px 5px rgb(5, 90, 5);
 }
 
 .about__gif {
