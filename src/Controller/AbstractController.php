@@ -25,4 +25,12 @@ abstract class AbstractController
         );
         $this->twig->addExtension(new DebugExtension());
     }
+
+    public function cleanPostData(string $data): string
+    {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
 }
