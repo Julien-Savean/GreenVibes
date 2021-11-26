@@ -25,9 +25,9 @@ DROP TABLE IF EXISTS `Plants`;
 CREATE TABLE `Plants` (
   `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
-  `type` varchar(45) NOT NULL,
+  `type` varchar(45) NOT NULL DEFAULT 'plant',
   `picture` varchar(255) NOT NULL,
-  `theme` varchar(45) NOT NULL,
+  `theme` varchar(45) NOT NULL DEFAULT 'music',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -38,7 +38,7 @@ CREATE TABLE `Plants` (
 
 LOCK TABLES `Plants` WRITE;
 /*!40000 ALTER TABLE `Plants` DISABLE KEYS */;
-INSERT INTO `Plants` VALUES (1,'Cana','chanvre','https://geaseeds.com/blog/wp-content/uploads/2017/07/marihuana.jpg','reggae'),(2,'Arabica','café','https://www.pauscafe.fr/wp-content/uploads/2017/09/cafier.jpg','techno'),(3,'Nono','sapin','https://fr.chatelaine.com/wp-content/uploads/2019/11/SapinCook800x800.jpg','chant de noël'),(4,'Miam-miam','carnivore','https://www.plantecarnivore.fr/wp-content/themes/plante-carnivore/images/plantecarnivore.jpg','métal'),(5,'Phiphi','ficus','https://www.noovomoi.ca/content/dam/style-de-vie/migrated/images/2017/08/28/ficus-en-pot.jpg','classique'),(6,'Kipick','cactus','https://images.truffaut.com/media/catalog/product/c/a/cactus_banniere-2.jpg?store=fr&image-type=image','country');
+INSERT INTO `Plants` VALUES (1,'Canabinou','chanvre','https://geaseeds.com/blog/wp-content/uploads/2017/07/marihuana.jpg','reggae'),(2,'Coffee10','café','https://www.pauscafe.fr/wp-content/uploads/2017/09/cafier.jpg','techno'),(3,'Nono','sapin','https://fr.chatelaine.com/wp-content/uploads/2019/11/SapinCook800x800.jpg','chant de noël'),(4,'Miam-miam','carnivore','https://www.plantecarnivore.fr/wp-content/themes/plante-carnivore/images/plantecarnivore.jpg','métal'),(5,'Phiphi','ficus','https://www.noovomoi.ca/content/dam/style-de-vie/migrated/images/2017/08/28/ficus-en-pot.jpg','classique'),(6,'Kipick','cactus','https://images.truffaut.com/media/catalog/product/c/a/cactus_banniere-2.jpg?store=fr&image-type=image','country');
 /*!40000 ALTER TABLE `Plants` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-25 13:53:40
+-- Dump completed on 2021-11-26 11:29:42

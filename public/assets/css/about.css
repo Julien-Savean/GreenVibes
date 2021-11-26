@@ -1,7 +1,4 @@
-@font-face {
-    font-family: titleFont2;
-    src: url("../fonts/black.TTF");
-}
+
 
 #about {
     color: black;
@@ -36,7 +33,6 @@
 .titre {
     text-align: center;
     margin: 1rem;
-    font-family: titleFont2;
     color: white;
 }
 

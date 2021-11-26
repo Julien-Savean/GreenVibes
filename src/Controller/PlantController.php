@@ -38,17 +38,12 @@ class PlantController extends AbstractController
 
         // $apiManager = new ApiManager();
         // $requests = $apiManager->requestApi();
-        // return $this->twig->render('Show/show.html.twig', ['plant' => $plant, 'requests' => $requests]);
-
-        $apiManager = new ApiManager();
-        $requests = $apiManager->requestApi();
-        $key = $id - 1;
-        $request = $requests[$key];
-        return $this->twig->render('Show/show.html.twig', ['plant' => $plant, 'request' => $request,
-        'url_ngrok' => self::URL_NGROK]);
+        // $key = $id - 1;
+        // $request = $requests[$key];
+        return $this->twig->render('Show/show.html.twig', ['plant' => $plant, //'request' => $request,
+    /*'url_ngrok' => self::URL_NGROK*/]);
     }
 
-    // showArray is for test //
     public function showArray()
     {
         $apiManager = new ApiManager();
