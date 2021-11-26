@@ -5,36 +5,40 @@
 {% endblock %}
 
 {% block content %}
+
     <div class="container justify-content-center">
-        <pre>
-        {{ dump(request) }}
-        </pre> 
         <div class="row">
             <div class="col">
                 <div class="plant">
+                    
                     <img src="{{ plant.picture }}" alt="{{ plant.name }}">
                 </div>
             </div>
         </div>
     </div>
+    
+        <pre>
+        {{ dump(request) }}
+        </pre>
+        <pre>
+        {{ dump(url_ngrok) }}
+        </pre>
+
     <div class="container mt-5">
         <div class="row">
             <div class="player">
                 <div id="info" class="info">
                     <span class="artist">
-                        {% for row in request %}
 
-                                {{ row.name }}
-                                <audio autoplay src="{{ row.link }}"></audio>                               
+
+                                {{ request.name }}
+                                <audio autoplay src="{{ url_ngrok }}~/music/~{{ request.link }}"></audio>                               
                             
-                        {% endfor %}                                          
                     </span>
                     <span class="name">
-                        {% for row in request %}
                             
-                                {{ row.soundName }}
+                                {{ request.soundName }}
                             
-                        {% endfor %}
                     </span>
                     <div class="progress-bar">
                         <div class="bar"></div>
@@ -50,8 +54,6 @@
                 </div>
             </div>
         </div>
-    </div>
- 
 {% endblock %}
 
 {% block javascript %}

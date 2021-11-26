@@ -14,7 +14,7 @@ use App\Model\PlantManager;
 
 class PlantController extends AbstractController
 {
-    public const NGROK = 'http://9dcb-86-195-148-141.ngrok.io/musics';
+    public const URL_NGROK = 'https://9dcb-86-195-148-141.ngrok.io';
     /**
      * Display home page
      *
@@ -44,7 +44,7 @@ class PlantController extends AbstractController
         $requests = $apiManager->requestApi();
         $key = $id - 1;
         $request = $requests[$key];
-        return $this->twig->render('Show/show.html.twig', ['plant' => $plant, 'request' => $request]);
+        return $this->twig->render('Show/show.html.twig', ['plant' => $plant, 'request' => $request, 'url_ngrok' => self::URL_NGROK]);
     }
 
     // showArray is for test //
