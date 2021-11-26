@@ -33,7 +33,9 @@
 
                                 {{ request.name }}
                                     <div class= showPlayer>
-                                        <audio autoplay src="{{ url_ngrok ~ request.link }}"></audio>
+                                        <audio class='play' id='play' autoplay>
+                                        <source src="{{ url_ngrok ~ request.link }}">
+                                        </audio>
                                     </div>
                     </span>
                     <span class="name">
