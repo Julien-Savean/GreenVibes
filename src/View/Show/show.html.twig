@@ -5,19 +5,41 @@
 {% endblock %}
 
 {% block content %}
+
     <div class="container justify-content-center">
         <div class="row">
             <div class="col">
-                <div class="plant"><img src="{{ plant.picture }}" alt="{{ plant.name }}"></div>
+                <div class="plant">
+                    
+                    <img src="{{ plant.picture }}" alt="{{ plant.name }}">
+                </div>
             </div>
         </div>
     </div>
-    <div class="container">
+    
+        <pre>
+        {{ dump(request) }}
+        </pre>
+        <pre>
+        {{ dump(url_ngrok) }}
+        </pre>
+
+    <div class="container mt-5">
         <div class="row">
             <div class="player">
                 <div id="info" class="info">
-                    <span class="artist">Flume</span>
-                    <span class="name">Say it</span>
+                    <span class="artist">
+
+
+                                {{ request.name }}
+                                <audio autoplay src="{{ url_ngrok }}~/music/~{{ request.link }}"></audio>                               
+                            
+                    </span>
+                    <span class="name">
+                            
+                                {{ request.soundName }}
+                            
+                    </span>
                     <div class="progress-bar">
                         <div class="bar"></div>
                     </div>
@@ -32,7 +54,6 @@
                 </div>
             </div>
         </div>
-    </div>     
 {% endblock %}
 
 {% block javascript %}

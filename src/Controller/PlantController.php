@@ -9,12 +9,15 @@
 
 namespace App\Controller;
 
+use App\Model\ApiManager;
 use App\Model\PlantManager;
 
 class PlantController extends AbstractController
 {
+    public const URL_NGROK = 'https://9dcb-86-195-148-141.ngrok.io';
     /**
      * Display home page
+     *
      *
      * @return string
      * @throws \Twig\Error\LoaderError
@@ -32,6 +35,24 @@ class PlantController extends AbstractController
     {
         $plantManager = new PlantManager();
         $plant = $plantManager->getOnePlant($id);
-        return $this->twig->render('Show/show.html.twig', ['plant' => $plant]);
+
+        // $apiManager = new ApiManager();
+        // $requests = $apiManager->requestApi();
+        // return $this->twig->render('Show/show.html.twig', ['plant' => $plant, 'requests' => $requests]);
+
+        $apiManager = new ApiManager();
+        $requests = $apiManager->requestApi();
+        $key = $id - 1;
+        $request = $requests[$key];
+        return $this->twig->render('Show/show.html.twig', ['plant' => $plant, 'request' => $request,
+        'url_ngrok' => self::URL_NGROK]);
+    }
+
+    // showArray is for test //
+    public function showArray()
+    {
+        $apiManager = new ApiManager();
+        $requests = $apiManager->requestApi();
+        return $this->twig->render('Item/show.html.twig', ['requests' => $requests]);
     }
 }
