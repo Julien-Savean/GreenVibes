@@ -1,3 +1,13 @@
+@font-face {
+    font-family: titleFont;
+    src: url("../fonts/Adoriademo.otf");
+}
+
+@font-face {
+    font-family: textFont;
+    src: url("../fonts/GreatVibes-Regular.otf");
+}
+
 body {
     width: 100%;
     background: url("../images/fond4.jpg");
@@ -22,7 +32,50 @@ nav img {
 }
 
 .nav-title {
+    font-family: titleFont;
     font-size: 3rem;
     color: white;
+    font-weight: bold;
 }
 
+#logoAbout {
+    position: relative;
+    margin-right: 2rem;
+    height: 7rem;
+    -webkit-transition:all .5s cubic-bezier(.6,2,.4,1);
+    -moz-transition:all .5s cubic-bezier(.6,2,.4,1);
+        -ms-transition:all .5s cubic-bezier(.6,2,.4,1);
+        -o-transition:all .5s cubic-bezier(.6,2,.4,1);
+            transition:all .5s cubic-bezier(.6,2,.4,1);
+    filter: drop-shadow(1px 1px 2px white);
+}
+
+#logoAbout:hover {
+    z-index:5;
+    -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+                transform: scale(1.2);  
+}
+
+/* 
+#logoAbout:hover::before {
+    background-size: cover;
+    animation: rotating 14s infinite linear;
+    background-image: url('../images/starburst.png');
+    position: absolute; 
+    content: '';
+    width: 100%;
+    height: 100%;
+}
+
+@-webkit-keyframes rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} 
+*/

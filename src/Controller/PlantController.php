@@ -44,7 +44,8 @@ class PlantController extends AbstractController
         $requests = $apiManager->requestApi();
         $key = $id - 1;
         $request = $requests[$key];
-        return $this->twig->render('Show/show.html.twig', ['plant' => $plant, 'request' => $request, 'url_ngrok' => self::URL_NGROK]);
+        return $this->twig->render('Show/show.html.twig', ['plant' => $plant, 'request' => $request,
+        'url_ngrok' => self::URL_NGROK]);
     }
 
     // showArray is for test //
